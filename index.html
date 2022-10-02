@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puppy Clicker</title>
+    <script rel="text/javascript" defer src="index.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/616/616408.png">
+</head>
+<body>
+    <header>
+        <h1>Puppy Clicker</h1>
+    </header>
+    <main>
+        <div class="column">
+            <div class="counter-container">
+                <div><span id="score">0</span> Puppies</div>
+                <div><span id="rate">0</span> puppies per second</div>
+                <div><button><image id="puppy" alt ="puppy-icon" src="https://cdn-icons-png.flaticon.com/512/616/616408.png"></image></button></div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="producer-header">Puppy Producers</div>
+            <div class="producer-container"">
+                <!-- item: kibble -->
+                <div class="producer">
+                    <div class="buy-col">
+                        <span class="producer-name">Kibble</span>
+                        <span><button id="kibble-button">Buy</button></span>
+                    </div>
+                    <div class="details-col">
+                        <div>Quantity: <span id="kibble-owned">0</span></div>
+                        <div>Puppy/second: <span id="kibble-pass">1</span></div>
+                        <div>Cost: <span id="kibble-cost">10</span></div>
+                    </div>
+                </div>
+                <!-- item: bone -->
+                <div class="producer">
+                    <div class="buy-col">
+                        <span class="producer-name">Bone</span>
+                        <span><button id="bone-button">Buy</button></span>
+                    </div>
+                    <div class="details-col">
+                        <div>Quantity: <span id="bone-owned">0</span></div>
+                        <div>Puppy/second: <span id="bone-pass">2</span></div>
+                        <div>Cost: <span id="bone-cost">50</span></div>
+                    </div>
+                </div>
+                <!-- item: bed -->
+                <div class="producer">
+                    <div class="buy-col">
+                        <span class="producer-name">Bed</span>
+                        <span><button id="bed-button">Buy</button></span>
+                    </div>
+                    <div class="details-col">
+                        <div>Quantity: <span id="bed-owned">0</span></div>
+                        <div>Puppy/second: <span id="bed-pass">5</span></div>
+                        <div>Cost: <span id="bed-cost">100</span></div>
+                    </div>
+                </div>
+                <!-- item: beef gravy -->
+                <div class="producer">
+                    <div class="buy-col">
+                        <span class="producer-name">Beef Gravy</span>
+                        <span><button id="beef-button">Buy</button></span>
+                    </div>
+                    <div class="details-col">
+                        <div>Quantity: <span id="beef-owned">0</span></div>
+                        <div>Puppy/second: <span id="beef-pass">10</span></div>
+                        <div>Cost: <span id="beef-cost">500</span></div>
+                    </div>
+                </div>
+                <!-- item: squeaky toy -->
+                <div class="producer">
+                    <div class="buy-col">
+                        <span class="producer-name">Squeaky Toy</span>
+                        <span><button id="toy-button">Buy</button></span>
+                    </div>
+                    <div class="details-col">
+                        <div>Quantity: <span id="toy-owned">0</span></div>
+                        <div>Puppy/second: <span id="toy-pass">20</span></div>
+                        <div>Cost: <span id="toy-cost">1000</span></div>
+                    </div>
+                </div>
+                <!-- item: vitamin -->
+                <div class="producer">
+                    <div class="buy-col">
+                        <span class="producer-name">Vitamin</span>
+                        <span><button id="vitamin-button">Buy</button></span>
+                    </div>
+                    <div class="details-col">
+                        <div>Quantity: <span id="vitamin-owned">0</span></div>
+                        <div>Puppy/second: <span id="vitamin-pass">50</span></div>
+                        <div>Cost: <span id="vitamin-cost">5000</span></div>
+                    </div>
+                </div>
+                <!-- item: duck foot -->
+                <div class="producer">
+                    <div class="buy-col">
+                        <span class="producer-name">Duck Foot</span>
+                        <span><button id="foot-button">Buy</button></span>
+                    </div>
+                    <div class="details-col">
+                        <div>Quantity: <span id="foot-owned">0</span></div>
+                        <div>Puppy/second: <span id="foot-pass">75</span></div>
+                        <div>Cost: <span id="foot-cost">10000</span></div>
+                    </div>
+                </div>
+                <!-- pig ear -->
+                <div class="producer">
+                    <div class="buy-col">
+                        <span class="producer-name">Pig Ear</span>
+                        <span><button id="ear-button">Buy</button></span>
+                    </div>
+                    <div class="details-col">
+                        <div>Quantity: <span id="ear-owned">0</span></div>
+                        <div>Puppy/second: <span id="ear-pass">100</span></div>
+                        <div>Cost: <span id="ear-cost">50000</span></div>
+                    </div>
+                </div>
+                <!-- dog house -->
+                <div class="producer">
+                    <div class="buy-col">
+                        <span class="producer-name">Dog House</span>
+                        <span><button id="house-button">Buy</button></span>
+                    </div>
+                    <div class="details-col">
+                        <div>Quantity: <span id="house-owned">0</span></div>
+                        <div>Puppy/second: <span id="house-pass">200</span></div>
+                        <div>Cost: <span id="house-cost">100000</span></div>
+                    </div>
+                </div>
+                <!-- dog park -->
+                <div class="producer">
+                    <div class="buy-col">
+                        <span class="producer-name">Dog Park</span>
+                        <span><button id="park-button">Buy</button></span>
+                    </div>
+                    <div class="details-col">
+                        <div>Quantity: <span id="park-owned">0</span></div>
+                        <div>Puppy/second: <span id="park-pass">500</span></div>
+                        <div>Cost: <span id="park-cost">500000</span></div>
+                    </div>
+                </div>
+                <!-- dog show -->
+                <div class="producer">
+                    <div class="buy-col">
+                        <span class="producer-name">Dog Show</span>
+                        <span><button id="show-button">Buy</button></span>
+                    </div>
+                    <div class="details-col">
+                        <div>Quantity: <span id="show-owned">0</span></div>
+                        <div>Puppy/second: <span id="show-pass">750</span></div>
+                        <div>Cost: <span id="show-cost">1000000</span></div>
+                    </div>
+                </div>
+                <!-- dog celebrity -->
+                <div class="producer">
+                    <div class="buy-col">
+                        <span class="producer-name">Dog Celeb</span>
+                        <span><button id="celebrity-button">Buy</button></span>
+                    </div>
+                    <div class="details-col">
+                        <div>Quantity: <span id="celebrity-owned">0</span></div>
+                        <div>Puppy/second: <span id="celebrity-pass">1000</span></div>
+                        <div>Cost: <span id="celebrity-cost">5000000</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Developed by <span id="author"><a href="https://soft-baklava-b49141.netlify.app/index.html" target="_blank" >Drewford</a></span></p>
+    </footer>
+</body>
+</html>
+
+<!-- 
+Requirements (c/p from workshop)
+
+List of Semantic Elements
+    body
+    header
+    main
+    footer
+
+List of Classes
+    column
+    counter-container
+    producer-header
+    producer-container
+    producer
+
+List of IDs
+    score
+    rate
+    puppy
+-->

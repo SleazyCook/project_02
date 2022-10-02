@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Permanent+Marker&display=swap');
+
+body {
+    background-color: #f0b27a;
+}
+
+header {
+    background-color: #351c1a;
+    color: #fffebb;
+    text-align: center;
+    padding-top: .1em;
+    border-radius: 1em;
+    border: 7px double #fffebb;
+}
+
+h1 {
+    font-family: 'Berkshire Swash';
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    
+    color: #fffebb;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 3em;
+    height: 90vh;
+    margin-bottom: 0;
+    height: fit-content;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 2em;
+    margin-top: -1.5em;
+}
+
+.counter-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1em;
+}
+
+button {
+    background-color: #f0b27a;
+    border: none;
+    cursor: pointer;
+}
+
+image {
+    max-width: 200px;
+    max-width: 200px;
+}
+
+#puppy {
+    max-height: 175px;
+}
+
+.producer-header {
+    font-size: 25px;
+    font-family: 'Berkshire Swash';
+    text-decoration: underline;
+    margin-bottom: -.6em;
+    /* z-index: keep header on top of container */
+    z-index: 2;
+    background-color: #f0b27a;
+    width: fit-content;
+    align-self: center;
+    /* justify-self: center; */
+}
+
+.producer-container {
+    align-self: center;
+    background-color: #351c1a;
+    border: 7px double #fffebb;
+    border-radius: 1em;
+    /* z-index: keep container under header */
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 40vh;
+    max-height: 40vh; 
+    width: fit-content;
+    overflow: scroll;
+    /* hide scrollbar for IE, Edge, Firefox */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* hide scrollbar for Chrome, Safari, Opera */
+.producer-container::-webkit-scrollbar {
+    display: none;
+}
+
+.producer {
+    margin: .4em;
+    color: #351c1a;
+    background-color: #f5dcb4;
+    border-radius: 4px;
+    padding: .2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly
+}
+
+.details-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 4px double #351c1a;
+    width: 55vw;
+    font-size: large;
+    padding-left: .5em;;
+}
+
+.buy-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 4px double #351c1a;
+    width: 25vw;
+    font-size: large;
+}
+
+.producer-name {
+    font-family: 'Berkshire Swash';
+}
+
+footer {
+    color: #351c1a;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+#author {
+    font-family: 'Berkshire Swash';
+    color:  #351c1a;
+}
+
+a {
+    text-decoration: none;
+    color:  #351c1a;
+}
