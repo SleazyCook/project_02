@@ -231,7 +231,7 @@ toyButton.addEventListener('click', function(clickToy) {
     } return;
 })
 
-// ---------------------item:beef-vitaman-------------------
+// ---------------------item:beef-vitamin-------------------
 /*
 Repeat all steps from item:kibble
 // but change the following: 
@@ -240,28 +240,28 @@ Repeat all steps from item:kibble
     -update itemPrice
 */
 
-const vitamanButton = document.getElementById('vitaman-button');
-const vitamanCost = document.getElementById('vitaman-cost');
-const vitamanQuantity = document.getElementById('vitaman-owned');
-const vitamanRate = 50;
-let vitamanPrice = 5000;
-let vitamanInventory = 0;
+const vitaminButton = document.getElementById('vitamin-button');
+const vitaminCost = document.getElementById('vitamin-cost');
+const vitaminQuantity = document.getElementById('vitamin-owned');
+const vitaminRate = 50;
+let vitaminPrice = 5000;
+let vitaminInventory = 0;
 
-vitamanButton.addEventListener('click', function(clickVitman) {
-    if (clickVitamin.target.matches('#vitaman-button')) {
-        if (vitamanPrice <= score) {
-        console.log("You bought a vitaman");
-            score = score - vitamanPrice;
+vitaminButton.addEventListener('click', function(clickVitamin) {
+    if (clickVitamin.target.matches('#vitamin-button')) {
+        if (vitaminPrice <= score) {
+        console.log("You bought a vitamin");
+            score = score - vitaminPrice;
             scoreDisplay.innerText = score;
-            rate = rate + vitamanRate;
+            rate = rate + vitaminRate;
             console.log("Puppies per second : ", rate);
             rateDisplay.innerText = rate;
-            vitamanPrice = Math.floor(vitamanPrice + (vitamanPrice/10));
-            console.log("Vitmain price: ", vitamanPrice);
-            vitamanCost.innerText = vitamanPrice;
-            vitamanInventory++;
-            vitamanQuantity.innerText = vitamanInventory;
-            console.log("Vitmains Owned: ", vitamanInventory);
+            vitaminPrice = Math.floor(vitaminPrice + (vitaminPrice/10));
+            console.log("Vitmin price: ", vitaminPrice);
+            vitaminCost.innerText = vitaminPrice;
+            vitaminInventory++;
+            vitaminQuantity.innerText = vitaminInventory;
+            console.log("Vitmins Owned: ", vitaminInventory);
         }
     } return;
 })
