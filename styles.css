@@ -53,6 +53,12 @@ main {
 
 button {
     background-color: #f0b27a;
+    border: 1px solid #351c1a;
+    cursor: pointer;
+}
+
+#puppy-button {
+    background-color: #f0b27a;
     border: none;
     cursor: pointer;
 }
